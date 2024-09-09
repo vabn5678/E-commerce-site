@@ -8,7 +8,7 @@ const Listproduct = () => {
 
 
     const fetchInfo = async () => {
-        await fetch('http://localhost:1000/getallproducts')
+        await fetch('https://e-commerce-site-backend-ym9n.onrender.com/getallproducts')
             .then((res) => res.json())
             .then((data) => { setallproducts(data) });
     }
@@ -18,7 +18,7 @@ const Listproduct = () => {
     }, [])
 
     const remove_product = async (id) => {
-        await fetch('http://localhost:1000/removeproduct', {
+        await fetch('https://e-commerce-site-backend-ym9n.onrender.com/removeproduct', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
