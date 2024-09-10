@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 
 
 // connect to mongodb 
-mongoose.connect("mongodb+srv://negivishnu58:7876771473@cluster4.lchhsy9.mongodb.net/e-commerce")
+mongoose.connect(process.env.mongo)
 
 
 
