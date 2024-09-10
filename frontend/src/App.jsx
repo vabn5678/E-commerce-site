@@ -27,7 +27,6 @@ function App() {
             <Route path=":product_Id" element={<Product />} />
 
           </Route>
-
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Loginsignup />} />
 

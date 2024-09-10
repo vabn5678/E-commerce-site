@@ -10,7 +10,14 @@ const cors = require("cors");// to have access to react project
 // const { isNumberObject } = require("util/types");
 // const { error } = require("console");
 app.use(express.json());
-app.use(cors()); // to connect react frontend to react backend
+app.use(cors(
+    {
+        origin: 'https://regal-shortbread-5c6436.netlify.app', // Replace with your specific origin
+        // methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
+        // allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
+        credentials:true
+    }
+)); // to connect react frontend to react backend
 
 
 app.get("/", (req, res) => {
